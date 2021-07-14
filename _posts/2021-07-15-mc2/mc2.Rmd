@@ -1,0 +1,54 @@
+---
+title: "Assignment"
+description: |
+  Vast Challenge 2021 - Mini Challenge 2
+author:
+  - name: Chen Yuxi
+    url: https://www.linkedin.com/in/c-yuxi/
+date: 06-21-2021
+categories:
+  - Vast Challenge 2021
+  - Geospatial Graph
+output:
+  distill::distill_article:
+    toc: true
+    toc_float: true
+    toc_depth: 3
+    self_contained: false
+    
+draft: true
+---
+
+
+```{r setup, include=FALSE,  message=FALSE, warning=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+
+# Introduction
+
+This post attempts to answer the questions of [***Vast Challenge 2021 - Mini Challenge 2***](https://vast-challenge.github.io/2021/MC2.html).
+
+
+**Some background to the case scenario:** 
+
+In the roughly twenty years that Tethys-based GAStech has been operating a natural gas production site in the island country of Kronos, it has produced remarkable profits and developed strong relationships with the government of Kronos. However, GAStech has not been as successful in demonstrating environmental stewardship.
+
+In January, 2014, the leaders of GAStech are celebrating their new-found fortune as a result of the initial public offering of their very successful company. In the midst of this celebration, several employees of GAStech go missing. An organization known as the Protectors of Kronos (POK) is suspected in the disappearance, but things may not be what they seem.
+
+
+**Mini Challenge 2 focuses on the analysis of the movement, tracking and spending data of Gastech employees.** 
+
+GAStech provides many of their employees with company cars for their personal and professional use, but unbeknownst to the employees, the cars are equipped with GPS tracking devices. The tracking data for the two weeks leading up to the disappearance is provided, as well as credit card transactions and loyalty card usage data. 
+
+To promote local businesses, Kronos based companies provide a Kronos Kares benefit card to GASTech employees giving them discounts and rewards in exchange for collecting information about their credit card purchases and preferences as recorded on loyalty cards. This data has been made available to investigators in the hopes that it can help resolve the situation. However, Kronos Kares does not collect personal information beyond purchases.
+
+The objective of this analysis is to identify which GASTech employees made which purchases and identify suspicious patterns of behavior. The analysis will also deal with uncertainties that result from missing, conflicting, and imperfect data to make recommendations for further investigation.
+
+---
+
+# Dataset
+
+The following files are used in the analysis:
+
+**1. Geospatial maps of Abila and Kronos island**
