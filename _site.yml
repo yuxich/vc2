@@ -1,12 +1,32 @@
-name: "test"
-title: "My Blog"
+name: "RDataViz"
+title: "Yuxi's Blog"
+theme: theme.css
 description: |
-  My Blog
-output_dir: "docs"
+  Data Visualisation with R
+output_dir: "_site"
 navbar:
   right:
+    - text: "Assignment"
+      href:
+    - text: "DataViz Makeover"
+      menu:
+      - text: "DataViz Makeover 1"
+        href: https://yuxich.netlify.app/posts/2021-05-29-dataviz-makeover-1/
+      - text: "DataViz Makeover 2"
+        href: https://yuxich.netlify.app/posts/2021-06-10-dataviz-makeover-2/
+      - text: "DataViz Makeover 3"
+        href: 
     - text: "Home"
       href: index.html
     - text: "About"
       href: about.html
+    - icon: fab fa-github fa-lg
+      href: https://github.com/yuxich/RDataViz
+    - icon: fa-linkedin fa-lg
+      href: https://www.linkedin.com/in/c-yuxi/
+
+
 output: distill::distill_article
+
+
+    
